@@ -12,7 +12,7 @@ export default function ProductCard({ product }: { product: any }) {
   return (
     <Link href={`/product/${product.id}`}>
       <motion.div className="relative group ...">
-        <div className="relative group rounded-[30px] md:rounded-[40px] overflow-hidden bg-white aspect-[4/5] cursor-pointer">
+        <div className="relative group rounded-[20px] md:rounded-[40px] overflow-hidden bg-white aspect-[4/5] cursor-pointer">
           {/* Product Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
@@ -39,12 +39,12 @@ export default function ProductCard({ product }: { product: any }) {
           </button>
 
           {/* Bottom Content Layer */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-5 md:p-8">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-3 md:p-8">
             <div className="flex justify-between items-end">
               <div className="text-white">
-                <p className="text-[10px] tracking-widest uppercase opacity-70 mb-1">{product.category}</p>
-                <h3 className="font-sans font-semibold text-sm md:text-lg leading-tight">{product.name}</h3>
-                <p className="font-sans font-light mt-1 text-sm md:text-base">${product.price}</p>
+                <p className="text-[9px] md:text-[10px] tracking-widest uppercase opacity-70 mb-1">{product.category}</p>
+                <h3 className="font-sans font-semibold text-xs md:text-lg leading-tighter md:leading-tight">{product.name}</h3>
+                <p className="font-sans font-light mt-1 text-xs md:text-base">${product.price}</p>
               </div>
 
               {/* Add to Cart Action */}
