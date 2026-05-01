@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Minus, Plus, Trash2 } from 'lucide-react';
 import { useStore } from '@/context/StoreContext';
+import Image from 'next/image';
 
 export default function CartDrawer() {
   const { cart, isCartOpen, setIsCartOpen, updateQuantity, removeFromCart, cartTotal } = useStore();
@@ -35,7 +36,7 @@ export default function CartDrawer() {
                 cart.map((item) => (
                   <div key={`${item.id}-${item.size}`} className="flex gap-4 group">
                     <div className="h-32 w-24 bg-white rounded-2xl overflow-hidden flex-shrink-0">
-                      <img src={item.image} className="h-full w-full object-cover" />
+                      <Image src={item.image} alt='Item-image' className="h-full w-full object-cover" />
                     </div>
                     <div className="flex-1 flex flex-col justify-between py-1">
                       <div>
