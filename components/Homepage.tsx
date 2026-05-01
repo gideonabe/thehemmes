@@ -130,7 +130,7 @@ export default function Homepage() {
       <Nav />
 
       {/* --- EDITORIAL HERO SECTION --- */}
-      <section className="relative h-dvh w-full overflow-hidden flex flex-col justify-end p-8 md:p-20">
+      <section className="relative h-[100svh] w-full overflow-hidden flex flex-col justify-end p-8 md:p-20">
         
         {/* Cinematic Background */}
         <motion.div 
