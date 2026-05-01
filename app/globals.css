@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+  --color-cloud-dancer: #F0EEE9;
+  --color-hemmes-dark: #1A1A1A;
+  
+  /* Mapping CSS variables from Next.js fonts */
+  --font-serif: var(--font-outfit);
+  --font-sans: var(--font-inter);
+
+  /* Custom animations for that "Apple" feel */
+  --animate-reveal: reveal 0.8s cubic-bezier(0.43, 0.13, 0.23, 0.96) forwards;
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  /* background: var(--background); */
+  /* color: var(--foreground); */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
