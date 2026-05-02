@@ -167,7 +167,7 @@ export default function Homepage() {
             />
             
             {/* Tooltip Card */}
-            <div className="absolute top-0 left-6 md:left-8 w-40 md:w-52 p-4 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl opacity-100 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0 pointer-events-none">
+            <div className="absolute top-0 left-6 md:left-8 w-40 md:w-52 p-4 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0 pointer-events-none">
               <p className="text-[9px] text-white/50 uppercase tracking-[0.3em] mb-1 font-bold">New Arrival</p>
               <p className="text-white text-[11px] md:text-xs font-semibold uppercase mb-2 tracking-wide">Essential Cotton Canvas Cap</p>
               <p className="text-white/80 text-xs font-light">$125.00</p>
@@ -190,7 +190,7 @@ export default function Homepage() {
             />
             
             {/* Tooltip Card */}
-            <div className="absolute top-0 left-6 md:left-8 w-40 md:w-52 p-4 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl opacity-100 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0 pointer-events-none">
+            <div className="absolute top-0 left-6 md:left-8 w-40 md:w-52 p-4 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0 pointer-events-none">
               <p className="text-[9px] text-white/50 uppercase tracking-[0.3em] mb-1 font-bold">New Arrival</p>
               <p className="text-white text-[11px] md:text-xs font-semibold uppercase mb-2 tracking-wide">Essential Heavyweight Roundneck</p>
               <p className="text-white/80 text-xs font-light">$160.00</p>

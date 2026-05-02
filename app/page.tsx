@@ -26,7 +26,7 @@ export default function Page() {
   // if (isLoading) return null;
 
   return (
-    <main className="relative min-h-screen w-full overflow-hidden bg-cloud-dancer">
+    <main className="relative h-screen w-full bg-cloud-dancer">
       <AnimatePresence mode="wait">
         {!isEntered ? (
           <SplashScreen key="splash" onEnter={() => setIsEntered(true)} />
